@@ -26,6 +26,7 @@ num_threads=8
 for file in ${reads_dir}/*.bam; do
   bam_files+=("$file")
 done
+echo $bam_files
 
 # Run featureCounts for all BAM files
 featureCounts -T $num_threads -t exon -g gene_id -a ${genome_dir}/GCF_000001635.27_GRCm39_genomic.gtf \
