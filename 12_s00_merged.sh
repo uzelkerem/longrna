@@ -20,7 +20,12 @@ num_threads=8
 
 
 # Create an array to store the filenames of all BAM files
-bam_files=(${reads_dir}/*.bam)
+#bam_files=(${reads_dir}/*.bam)
+
+# Loop through the BAM files and add them to the array
+for file in ${reads_dir}/*.bam; do
+  bam_files+=("$file")
+done
 
 # Run featureCounts for all BAM files
 featureCounts -T $num_threads -t exon -g gene_id -a ${genome_dir}/GCF_000001635.27_GRCm39_genomic.gtf \
