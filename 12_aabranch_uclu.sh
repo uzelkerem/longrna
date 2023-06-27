@@ -27,8 +27,8 @@ bam_files=(${reads_dir}/*.bam)
 
 # Run featureCounts for all BAM files
 featureCounts -T $num_threads -t exon -g gene_id -a ${genome_dir}/gencode.vM29.primary_assembly.annotation.gtf \
-  -o "${output_folder0}/aabranchuclu_counts.txt" ${reads_dir}/HSC_3_R1_processed_trimmed_Aligned.sortedByCoord.out.bam_dedup.bam ${reads_dir}/HSC_2_R1_processed_trimmed_Aligned.sortedByCoord.out.bam_dedup.bam ${reads_dir}/HSC_1_R1_processed_trimmed_Aligned.sortedByCoord.out.bam_dedup.bam  > "${log_dir0}/aabranch_uclufeatureCounts.log" 2>&1
+  -o "${output_folder0}/aabranchuclu_counts.txt" ${reads_dir}/HSC_15_R1_processed_trimmed_Aligned.sortedByCoord.out.bam_dedup.bam ${reads_dir}/HSC_2_R1_processed_trimmed_Aligned.sortedByCoord.out.bam_dedup.bam ${reads_dir}/HSC_1_R1_processed_trimmed_Aligned.sortedByCoord.out.bam_dedup.bam  > "${log_dir0}/aabranch_uclufeatureCounts.log" 2>&1
 
 # Run featureCounts for all BAM files
 featureCounts -T $num_threads -s 2 -t exon -g gene_id -a ${genome_dir}/gencode.vM29.primary_assembly.annotation.gtf \
-  -o "${output_folder0}/aabranchuclu_counts_s02.txt" ${reads_dir}/HSC_3_R1_processed_trimmed_Aligned.sortedByCoord.out.bam_dedup.bam ${reads_dir}/HSC_2_R1_processed_trimmed_Aligned.sortedByCoord.out.bam_dedup.bam ${reads_dir}/HSC_1_R1_processed_trimmed_Aligned.sortedByCoord.out.bam_dedup.bam  > "${log_dir0}/aabranch_uclufeatureCounts_s02.log" 2>&1
+  -o "${output_folder0}/aabranchuclu_counts_s02.txt" ${reads_dir}/HSC_15_R1_processed_trimmed_Aligned.sortedByCoord.out.bam_dedup.bam ${reads_dir}/HSC_2_R1_processed_trimmed_Aligned.sortedByCoord.out.bam_dedup.bam ${reads_dir}/HSC_1_R1_processed_trimmed_Aligned.sortedByCoord.out.bam_dedup.bam  > "${log_dir0}/aabranch_uclufeatureCounts_s02.log" 2>&1
