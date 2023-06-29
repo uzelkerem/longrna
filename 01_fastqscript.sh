@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set the input folder and output folder paths
-input_folder="/mnt/groupMansuy/kerem/tasks/longrna/rawdata"
-output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/s2n_preprocess_01/01_FastQC_raw_data"
+input_folder="/mnt/groupMansuy/kerem/tasks/longrna/rawdata_fig3"
+output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/01_FastQC_raw_data"
 mkdir -p "${output_folder}"
 
 
