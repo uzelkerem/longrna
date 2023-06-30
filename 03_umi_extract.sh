@@ -1,8 +1,7 @@
 #!/bin/bash
-
-input_folder="/mnt/groupMansuy/kerem/tasks/longrna/rawdata"
-output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/s2n_preprocess_01/03_UMI_extraction"
-mkdir "${output_folder}"
+input_folder="/mnt/groupMansuy/kerem/tasks/longrna/rawdata_fig3"
+output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/03_UMI_extraction"
+mkdir -p "${output_folder}"
 
 # Create a log directory if it doesn't exist
 log_dir="${output_folder}/logs"
