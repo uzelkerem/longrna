@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the directory path
-directory="/mnt/groupMansuy/kerem/tasks/longrna/rawdata_fig3/"
+directory="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/01_FastQC_raw_data"
 
 # Loop through each file in the directory
 for file in "$directory"/*; do
