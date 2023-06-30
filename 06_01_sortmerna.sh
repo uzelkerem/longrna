@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set the input folder and output folder paths
-input_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/s2n_preprocess_01/04_trimmed_data/unzipped"
-output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/s2n_preprocess_01/06_sortmernaed_data"
+input_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/04_trimmed_data/unzipped"
+output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/06_sortmernaed_data"
 mkdir -p "${output_folder}"
 
 # Create a log directory if it doesn't exist
