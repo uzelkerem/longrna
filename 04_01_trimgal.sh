@@ -7,7 +7,7 @@ mkdir -p "${output_folder}"
 log_dir="${output_folder}/logs"
 mkdir "${log_dir}"
 
-for file in ${input_folder}/*.fq.gz; do
+for file in ${input_folder}/*.fastq.gz; do
   filename=$(basename "$file")
   sample="${filename%.*}"
   trim_galore "$file" -q 30 --length 30 --trim-n --stringency 2 -o ${output_folder} > "${log_dir}/${sample}.log" 2>&1
