@@ -5,11 +5,11 @@ reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/aa_branch/09_01_umidedup_ali
 
 
 output_folder_main="/mnt/groupMansuy/kerem/tasks/longrna/exp/aa_branch"
-output_folder0="${output_folder_main}/12_merged_featureCounts_umidedup_alig_star_trim/uclu"
+output_folder0="${output_folder_main}/12_02_merged_featureCounts_filtered/uclu"
 
 genome_dir="/mnt/groupMansuy/kerem/tasks/smallrna/genome_anara"
 
-mkdir "${output_folder0}"
+mkdir -p "${output_folder0}"
 
 
 # Create a log directory if it doesn't exist
