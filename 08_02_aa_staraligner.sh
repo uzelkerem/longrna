@@ -2,8 +2,8 @@
 
 # Set the input folder and output folder paths
 reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/06_sortmernaed_data/zipped"
-output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/08_02_alignment_star_sortmerna"
-genome_dir="/mnt/groupMansuy/kerem/tasks/longrna/genome/staridx"
+output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/08_02_aa_alignment_star_sortmerna"
+genome_dir="/mnt/groupMansuy/kerem/tasks/smallrna/genome_anara/genome_dir"
 
 mkdir -p "${output_folder}"
 
@@ -12,7 +12,7 @@ log_dir="${output_folder}/logs"
 mkdir "${log_dir}"
 
 # Set the number of threads to use
-num_threads=12
+num_threads=8
 
 # Run STAR alignment for each FASTQ file in the reads directory
 for file in ${reads_dir}/*other.fq.gz; do
@@ -22,7 +22,7 @@ for file in ${reads_dir}/*other.fq.gz; do
   STAR \
     --runThreadN ${num_threads} \
     --genomeDir ${genome_dir} \
-    --sjdbGTFfile /mnt/groupMansuy/kerem/tasks/longrna/genome/GCF_000001635.27_GRCm39_genomic.gtf \
+    --sjdbGTFfile /mnt/groupMansuy/kerem/tasks/smallrna/genome_anara/gencode.vM29.primary_assembly.annotation.gtf \
     --readFilesCommand zcat \
     --readFilesIn ${file} \
     --outFileNamePrefix ${output_folder}/${sample}_ \
