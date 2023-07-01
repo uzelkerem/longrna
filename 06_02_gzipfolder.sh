@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Set the input folder and output folder paths
-input_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/s2n_preprocess_01/06_sortmernaed_data"
+input_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/06_sortmernaed_data"
 output_folder="${input_folder}/zipped"
-mkdir $output_folder
+mkdir -p "${output_folder}"
 
 #zip the files and move them in a separate folder for downstream analysis
 for file in "${input_folder}"/*other.fq; do
