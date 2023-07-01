@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set the input folder and output folder paths
-reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/s2n_preprocess_01/08_01_alignment_star_trim"
-output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/s2n_preprocess_01/09_01_umidedup_alig_star_trim"
+reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/08_01_alignment_star_trim"
+output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/09_01_umidedup_alig_star_trim"
 
 # Create output folder if it doesn't exist
 mkdir -p "${output_folder}"
