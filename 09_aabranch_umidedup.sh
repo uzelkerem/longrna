@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set the input folder and output folder paths
-reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/aa_branch/08_01_alignment_star_trim"
-output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/aa_branch/09_01_umidedup_alig_star_trim"
+reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/08_aa_alignment_star"
+output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/09_aa_umidedup_alig_star_trim"
 
 
 
