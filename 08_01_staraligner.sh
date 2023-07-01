@@ -1,18 +1,18 @@
 #!/bin/bash
 
 # Set the input folder and output folder paths
-reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/s2n_preprocess_01/04_trimmed_data"
-output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/s2n_preprocess_01/08_01_alignment_star_trim"
+reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/04_trimmed_data"
+output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/08_01_alignment_star_trim"
 genome_dir="/mnt/groupMansuy/kerem/tasks/longrna/genome/staridx"
 
-mkdir "${output_folder}"
+mkdir -p "${output_folder}"
 
 # Create a log directory if it doesn't exist
 log_dir="${output_folder}/logs"
 mkdir "${log_dir}"
 
 # Set the number of threads to use
-num_threads=12
+num_threads=6
 
 # Run STAR alignment for each FASTQ file in the reads directory
 for file in ${reads_dir}/*.fq.gz; do
