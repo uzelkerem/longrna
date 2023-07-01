@@ -12,7 +12,7 @@ log_dir="${output_folder}/logs"
 mkdir "${log_dir}"
 
 # Set the number of threads to use
-num_threads=24
+num_threads=10
 
 # Run STAR alignment for each FASTQ file in the reads directory
 for file in ${reads_dir}/*.fq.gz; do
