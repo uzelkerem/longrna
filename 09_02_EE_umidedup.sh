@@ -2,7 +2,7 @@
 
 # Set the input folder and output folder paths
 reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/00_EEbranch/08_02_alignment_star_sortmerna"
-output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/preprocess_01/00_EEbranch/09_02_umidedup_alig_star_sortmerna"
+output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/00_EEbranch/09_02_umidedup_alig_star_sortmerna"
 
 # Create output folder if it doesn't exist
 mkdir -p "${output_folder}"
