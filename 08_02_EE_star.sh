@@ -2,8 +2,8 @@
 
 # Set the input folder and output folder paths
 reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/06_sortmernaed_data/zipped"
-output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/08_02_aa_alignment_star_sortmerna"
-genome_dir="/mnt/groupMansuy/kerem/tasks/smallrna/genome_anara/genome_dir"
+output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/00_EEbranch/08_02_alignment_star_sortmerna"
+genome_dir="/mnt/groupMansuy/kerem/tasks/longrna/genome_EE/staridx"
 
 mkdir -p "${output_folder}"
 
@@ -22,7 +22,7 @@ for file in ${reads_dir}/*other.fq.gz; do
   STAR \
     --runThreadN ${num_threads} \
     --genomeDir ${genome_dir} \
-    --sjdbGTFfile /mnt/groupMansuy/kerem/tasks/smallrna/genome_anara/gencode.vM29.primary_assembly.annotation.gtf \
+    --sjdbGTFfile /mnt/groupMansuy/kerem/tasks/longrna/genome_EE/Mus_musculus.GRCm39.109.gtf \
     --readFilesCommand zcat \
     --readFilesIn ${file} \
     --outFileNamePrefix ${output_folder}/${sample}_ \
