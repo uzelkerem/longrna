@@ -35,7 +35,7 @@ featureCounts -T $num_threads -t exon -g gene_id -a ${genome_dir}/GCF_000001635.
   -o "${output_folder0}/sortmerna_counts.txt" "${bam_files[@]}" > "${log_dir0}/sortmerna_featureCounts.log" 2>&1
 
 # Run featureCounts for all BAM files
-featureCounts -T $num_threads -s 2 -t exon -g gene_id -a ${genome_dir}/gencode.vM29.primary_assembly.annotation.gtf \
+featureCounts -T $num_threads -s 2 -t exon -g gene_id -a ${genome_dir}/GCF_000001635.27_GRCm39_genomic.gtf \
   -o "${output_folder2}/sortmerna_counts_s02.txt" $(ls $reads_dir/*.bam) > "${log_dir2}/sortmerna_featureCounts_s02.log" 2>&1
 
 # Run featureCounts for all BAM files
