@@ -32,11 +32,11 @@ bam_files=(${reads_dir}/*.bam)
 
 # Run featureCounts for all BAM files
 featureCounts -T $num_threads -t exon -g gene_id -a ${genome_dir}/Mus_musculus.GRCm39.109.CHRonly.gtf \
-  -o "${output_folder0}/count_gtfE_s00_sortmerna_chronly.txt" "${bam_files[@]}" > "${log_dir0}/count_gtfE_s00_sortmerna.log" 2>&1
+  -o "${output_folder0}/count_gtfE_s00_sortmerna_chronly.txt" "${bam_files[@]}" > "${log_dir0}/count_gtfE_s00_sortmerna_chronly.log" 2>&1
 
 # Run featureCounts for all BAM files
 featureCounts -T $num_threads -s 2 -t exon -g gene_id -a ${genome_dir}/Mus_musculus.GRCm39.109.CHRonly.gtf \
-  -o "${output_folder2}/count_gtfE_s02_sortmerna_chronly.txt" $(ls $reads_dir/*.bam) > "${log_dir2}/count_gtfE_s02_sortmerna.log" 2>&1
+  -o "${output_folder2}/count_gtfE_s02_sortmerna_chronly.txt" $(ls $reads_dir/*.bam) > "${log_dir2}/count_gtfE_s02_sortmerna_chronly.log" 2>&1
 
 featureCounts -T $num_threads -t exon -g gene_id -a ${genome_dir}/Mus_musculus.GRCm39.109.gtf \
   -o "${output_folder0}/count_gtfE_s00_sortmerna.txt" "${bam_files[@]}" > "${log_dir0}/count_gtfE_s00_sortmerna.log" 2>&1
