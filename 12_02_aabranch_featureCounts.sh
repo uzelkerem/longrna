@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Set the input folder and output folder paths
-reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess01/09_02_aa_umidedup_alig_star_sortmerna"
+reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/09_02_aa_umidedup_alig_star_sortmerna"
 
 
-output_folder_main="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess01"
+output_folder_main="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01"
 output_folder0="${output_folder_main}/12_02_aa_merged_featureCounts_umidedup_alig_star_sortmerna"
 
 genome_dir="/mnt/groupMansuy/kerem/tasks/smallrna/genome_anara"
