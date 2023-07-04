@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the input folder and output folder paths
-input_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/s2n_preprocess_01/04_trimmed_data"
+input_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/04_trimmed_data"
 output_folder="${input_folder}/unzipped"
 mkdir $output_folder
 
