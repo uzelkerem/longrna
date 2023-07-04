@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set the input folder and output folder paths
-input_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/s2n_preprocess_01/06_sortmernaed_data/zipped"
-output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/s2n_preprocess_01/07_02_FQscreen_sortmernaed_data"
+input_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/06_sortmernaed_data/zipped"
+output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/07_02_FQscreen_sortmernaed_data"
 mkdir $output_folder
 
 
