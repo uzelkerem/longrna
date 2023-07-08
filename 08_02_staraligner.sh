@@ -2,7 +2,7 @@
 
 # Set the input folder and output folder paths
 reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/06_sortmernaed_data/zipped"
-output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/_oldbranch/08_02_alignment_star_sortmerna"
+output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/_oldbranch/08_02_alignment_star_sortmerna"
 genome_dir="/mnt/groupMansuy/kerem/tasks/longrna/genome/staridx"
 
 mkdir -p "${output_folder}"
