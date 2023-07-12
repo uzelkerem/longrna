@@ -24,6 +24,6 @@ while IFS= read -r line; do
   sample_name=$(basename "$bam_file" R1_processed_trimmed.other_Aligned.sortedByCoord.out.bam_dedup.bam)
 
   # Run calculate-tin.py for the current line
-  geneBody_coverage.py -r "${genome_dir}/GRCm39_genomic.bed12" -i "$bam_file" -o "${output_folder}/Fig2_results_${sample_name}
+  geneBody_coverage.py -r "${genome_dir}/GRCm39_genomic.bed12" -i "$bam_file" -o "${output_folder}/Fig2_results_${sample_name}"
 
 done < ${reads_dir}/modified_bamlist.txt
