@@ -21,7 +21,7 @@ while IFS= read -r line; do
   bam_file=$(echo "$line" | awk '{print $1}')
   
   # Extract the sample name from the file path
-  sample_name=$(basename "$bam_file" R1_processed_trimmed.other_Aligned.sortedByCoord.out.bam_dedup.bam.bai)
+  sample_name=$(basename "$bam_file" R1_processed_trimmed.other_Aligned.sortedByCoord.out.bam_dedup.bam)
 
   # Run calculate-tin.py for the current line
   calculate-tin.py -r "${genome_dir}/GRCm39_genomic.bed12" -i "$bam_file" --names="$sample_name" -p 12 1> "${output_folder}/Fig3_results_${sample_name}.tsv"
