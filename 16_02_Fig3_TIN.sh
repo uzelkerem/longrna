@@ -13,7 +13,7 @@ bamnames="EE_HSC8_,EE_HSC9_"
 mkdir -p "${output_folder}"
 ${genome_dir}/GRCm39_genomic.bed12
 
-calculate-tin.py -r ${genome_dir}/GRCm39_genomic.bed12 -i ${reads_dir}/modified_bamlist2.txt --names="EE_HSC8,EE_HSC9" -p 12 1> ${output_folder}/Fig3_results.tsv
+calculate-tin.py -r ${genome_dir}/GRCm39_genomic.bed12 -i ${reads_dir}/modified_bamlist2.txt --names="HSC8,HSC9" -p 12 1> ${output_folder}/Fig3_results.tsv
 
 
 
