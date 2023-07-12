@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the input folder and output folder paths
-reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/_oldbranch/09_02_umidedup_alig_star_sortmerna/"
+reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/_oldbranch/09_02_umidedup_alig_star_sortmerna"
 output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/ee_fig3/preprocess_01/_oldbranch/16_02_TinScore/"
 genome_dir="/mnt/groupMansuy/kerem/tasks/longrna/genome"
 
