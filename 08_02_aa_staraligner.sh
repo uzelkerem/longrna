@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the input folder and output folder paths
-reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/06_sortmernaed_data/zipped"
+reads_dir="/mnt/groupMansuy/kerem/tasks/longrna/exp/allpreprocess_01/06_sortmernaed_data/zipped"
 output_folder="/mnt/groupMansuy/kerem/tasks/longrna/exp/all_preprocess_01/08_02_aa_alignment_star_sortmerna"
 genome_dir="/mnt/groupMansuy/kerem/tasks/smallrna/genome_anara/genome_dir"
 
